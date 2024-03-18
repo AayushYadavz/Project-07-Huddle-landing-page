@@ -11,10 +11,6 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-color: hsl(257, 40%, 49%);
-
-    font-family: "Open Sans", sans-serif;
-    font-weight: 400;
-    padding: 45px;
 }
 
 .container{
@@ -33,7 +29,7 @@ body{
 }
 
 .header img{
-    width: 190px;
+    width: 170px;
     padding-bottom: 20px; /* for smaller vh height */
 }
 
@@ -89,3 +85,30 @@ body{
 .social i:hover{
     color: hsl(300, 69%, 71%);
 }
+
+@media only screen and (max-width: 1440px) {
+    .hero-img img {
+      width: 100%;
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .main {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .social {
+      text-align: center;
+      margin-top: 50px;
+    }
+  
+    .hero-text h1 {
+      line-height: 1.5;
+      font-size: 26px;
+    }
+  
+    .hero-text a {
+      padding: 10px 70px;
+    }
+  }
